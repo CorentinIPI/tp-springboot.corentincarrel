@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+ <html>
+ 	<head>
+ 	
+ 	</head>
+ 	<body>
+ 		User 1 : {{gameM.nom1}}
+ 		User 2 : {{gameM.nom2}}
+ 		
+ 		<table border="1">
+ 			<tbody>
+ 			{{#gameM.jetons}}
+ 				<tr>
+ 					{{#.}}
+ 						<td>{{.}}</td>
+ 					{{/.}}
+ 				</tr>
+ 			{{/gameM.jetons}}
+ 			</tbody>
+ 		</table>
+ 	</body>
+ </html> 
